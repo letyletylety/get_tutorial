@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(GetMaterialApp(
@@ -21,12 +22,12 @@ class HomeController extends GetxController {
   void increment() => count++;
 }
 
-class Home extends GetView<HomeController> {
+class HomeView extends GetView<HomeController> {
   @override
   Widget build(context) => Scaffold(
       appBar: AppBar(title: Text("counter")),
       body: Center(
-        child: Obx(() => Text("${controller.counter}")),
+        child: Obx(() => Text("${controller.count}")),
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
