@@ -1,6 +1,8 @@
 # get_tutorial
 
-GetX Tutorial
+
+[GetX](https://pub.dev/packages/get) Tutorial
+
 
 ## Getting Started
 
